@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machiavellian Leadership Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #quiz-container { max-width: 600px; margin: auto; }
+    .question { margin-bottom: 20px; }
+    .options { list-style: none; padding: 0; }
+    .options li { margin: 5px 0; }
+    #timer { font-weight: bold; margin-bottom: 20px; }
+    #result { margin-top: 20px; }
+    button { padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Machiavellian Leadership Quiz</h1>
+    <div id="start-screen">
+      <p>Answer the following 20 questions based on Machiavelli's principles. Each question is timed to ensure authenticity.</p>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+    <div id="quiz-screen" style="display:none;">
+      <div id="timer">Time left: <span id="time">0</span>s</div>
+      <div class="question" id="question"></div>
+      <ul class="options" id="options"></ul>
+      <button id="next-btn" disabled>Next</button>
+    </div>
+    <div id="result-screen" style="display:none;">
+      <h2>Results</h2>
+      <div id="result"></div>
+      <button id="retake-btn">Retake Quiz</button>
+    </div>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>
